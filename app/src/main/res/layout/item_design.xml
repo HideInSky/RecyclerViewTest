@@ -6,43 +6,37 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="95dp"
+        android:layout_height="wrap_content"
         android:background="#ffffff">
-        <androidx.cardview.widget.CardView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:id="@+id/imageview"
-            app:cardCornerRadius="60dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp">
-
-            <ImageView
-                android:id="@+id/imageview1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/avocado"/>
-
-        </androidx.cardview.widget.CardView>
+        <ImageView
+            android:id="@+id/imageview1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
         <TextView
+            android:id="@+id/textview1"
             android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:text="Avocado"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="语文"
             android:textColor="#000000"
-            android:textSize="20sp"
-            android:layout_toRightOf="@+id/imageview"
+            android:textSize="30sp"
+            android:layout_toRightOf="@+id/imageview1"
             android:layout_marginTop="20dp"
             android:layout_marginLeft="20dp"/>
 
         <TextView
-            android:layout_width="120dp"
-            android:layout_height="30dp"
-            android:text="10:43pm"
-            android:textColor="#000000"
-            android:textSize="20sp"
-            android:layout_toRightOf="@+id/imageview"
-            android:layout_marginTop="20dp"
-            android:layout_marginLeft="20dp"/>
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/cardview_dark_background"
+            android:layout_below="@id/imageview1"
+            android:text="___"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"/>
+
+
+
 
     </RelativeLayout>
 
